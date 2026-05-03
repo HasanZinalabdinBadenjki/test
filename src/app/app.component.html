@@ -1,0 +1,41 @@
+<!--  <div class="container mt-5">
+  <div class="row">
+    <ng-container *ngIf="products.length > 0; else empt">
+      <div  class="col-md-4" *ngFor="let product of products ; let co = count ;let o=odd; let e= even" >
+        <div Class="card"  [ngClass]="{'bg-light':o , 'bg-secondary':e}">
+          <p>{{ product.type }}</p>
+          <img [src]="product.imgUrl"  Class="card-img-top img-fluid" alt="" />
+          <div Class="card-body">
+            <h5 lass="card-title">{{ product.name }}</h5>
+            <p Class]="card-text">price : {{ product.price }} $</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div> -->
+<!-- <ng-template #empt>
+  <h2 class="bg-danger text-white text-center">No products available.</h2>
+</ng-template>
+<div class="container mt-5">
+  <div class="row">
+      @for (product of products; track $index) {
+        <div class="col-md-4">
+          <div class="card">
+            <p>{{ product.type }}</p>
+            <img [src]="product.imgUrl"  Class="card-img-top img-fluid" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">price : {{ product.price }} $</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      }
+      <button class="btn btn-success" (click)="addProduct()">Add Product</button>
+  </div>
+</div> -->
+<h1>hello world</h1>
+<app-child (emitData)="username = $event"></app-child>
+<p>{{ username }}</p>
